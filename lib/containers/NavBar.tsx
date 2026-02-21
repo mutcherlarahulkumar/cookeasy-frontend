@@ -13,7 +13,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import { useColorMode } from "@cookeasy/lib/context/ThemeContext";
 import { useUser } from "@cookeasy/lib/context/UserContext";
 
-export default function NavBar({ authPage }: { authPage: boolean }) {
+export default function NavBar({ authPage }: { authPage?: boolean }) {
   const { mode, toggleColorMode } = useColorMode();
   const { user, loading } = useUser();
 
